@@ -14,6 +14,24 @@
 #define FOR(a,n) for(i=0;i<n;i++){	cin>>a[i];}
 using namespace std;
 
+lli d,x,y;
+void extendedEuclid(lli A, lli B)	// don't consider this! 
+{
+    if(B == 0) 
+    {
+         d = A;
+         x = 1;
+         y = 0;
+    }
+    else 
+    {
+        extendedEuclid(B, A%B);
+        int temp = x;
+        x = y;
+        y = temp - (A/B)*y;
+    }
+}
+
 /*    We use Queue DataStructure for the implementation of BFS Algorithm  */
 
 int main() {
