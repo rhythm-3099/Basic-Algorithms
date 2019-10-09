@@ -17,6 +17,10 @@
 #define endl "\n"
 using namespace std;
 
+lli myFunc(lli x){
+	return 8*(x*x*x);
+}
+
 // This is the Prim algorithm using min priority queue.
 // This program prints the cost of the minimum spanning tree
 // The nodes are 1-indexed.
