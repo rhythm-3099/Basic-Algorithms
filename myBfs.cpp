@@ -47,10 +47,10 @@ int main() {
 
 	/*Input the edges between two nodes  */
 	for(i=0;i<m;i++){
-        cout << "Enter the nodes between whom an edge is present \n";
-        cin >> a >> b;
-        adj[a].pb(b);  // Push back the value of b in adj[a]
-        adj[b].pb(a);  // Push back the value of a in adj[b]
+		cout << "Enter the nodes between whom an edge is present \n";
+		cin >> a >> b;
+		adj[a].pb(b);  // Push back the value of b in adj[a]
+		adj[b].pb(a);  // Push back the value of a in adj[b]
 	}
 	root = 1;  // Root is the starting node. Here, the starting node is 1
     visited[root]=true;  //  Root node is visited
